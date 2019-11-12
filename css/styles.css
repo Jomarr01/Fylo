@@ -48,6 +48,21 @@ header .SectionMenu li a {
 .SectionIntroduction {
   text-align: center;
   background-color: #1c2431;
+  position: relative;
+  padding-bottom: 215px;
+}
+.SectionIntroduction .ImgBackground {
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+}
+.SectionIntroduction .ImgBackground img {
+  width: 100%;
+  height: auto;
+}
+.SectionIntroduction .ImgIntroduction {
+  position: relative;
+  z-index: 2;
 }
 .SectionIntroduction .ImgIntroduction img {
   max-width: 550px;
@@ -56,14 +71,24 @@ header .SectionMenu li a {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 250%;
-  max-width: 50%;
+  max-width: 670px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 .SectionIntroduction .TextIntroduction {
   font-family: "Open Sans";
   font-size: 125%;
-  max-width: 40%;
+  max-width: 538px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.SectionIntroduction .ButtonIntroduction {
+  position: relative;
+  z-index: 2;
 }
 .SectionIntroduction .ButtonIntroduction button {
   padding: 15px 90px;
@@ -79,6 +104,22 @@ header .SectionMenu li a {
 }
 
 @media (max-width: 768px) {
+  .SectionIntroduction {
+    padding-bottom: 0;
+  }
+  .SectionIntroduction .ImgBackground {
+    bottom: 50%;
+  }
+  .SectionIntroduction .ImgBackground::before {
+    content: "";
+    max-width: 1440px;
+    width: 100%;
+    min-height: 340px;
+    height: 100%;
+    background-color: #181f2a;
+    position: absolute;
+    bottom: -335px;
+  }
   .SectionIntroduction .ImgIntroduction {
     margin: 0 20px;
   }
@@ -88,12 +129,14 @@ header .SectionMenu li a {
   }
   .SectionIntroduction .TitleIntroduction {
     max-width: none;
+    width: auto;
     padding: 0 20px;
     font-size: 150%;
     line-height: 33px;
   }
   .SectionIntroduction .TextIntroduction {
     max-width: 100%;
+    width: auto;
     padding: 0 20px;
     font-size: 95%;
   }
@@ -103,7 +146,7 @@ header .SectionMenu li a {
   }
 }
 .SectionServices {
-  padding: 100px 10%;
+  padding: 0 10%;
   text-align: center;
   position: relative;
 }
@@ -113,7 +156,7 @@ header .SectionMenu li a {
 }
 .SectionServices .ColServices {
   width: 50%;
-  padding: 50px 7%;
+  padding: 0 7% 50px 7%;
 }
 .SectionServices .ImgServices img {
   height: 80px;
@@ -143,7 +186,7 @@ header .SectionMenu li a {
 }
 .SectionDescription {
   display: flex;
-  padding: 0 7% 150px 7%;
+  padding: 50px 7% 150px 7%;
 }
 .SectionDescription .ImgDescription {
   width: 600px;
@@ -223,12 +266,24 @@ header .SectionMenu li a {
   position: relative;
   padding-bottom: 300px;
 }
+.SectionComments::before {
+  content: "";
+  width: 55px;
+  height: 50px;
+  background-image: url("../img/bg-quotes.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -35px;
+  left: 135px;
+  z-index: 1;
+}
 .SectionComments .ColComments {
   background-color: #202a3c;
   margin: 0 2%;
   padding: 20px 20px;
   border-radius: 5px;
   box-shadow: 10px 5px #1c2431;
+  z-index: 2;
 }
 .SectionComments .ColComments .TextComments {
   font-family: "Open Sans";
@@ -265,8 +320,16 @@ header .SectionMenu li a {
     display: block;
     padding: 20px 30px 350px 30px;
   }
+  .SectionComments::before {
+    top: 18px;
+    left: 50px;
+    width: 30px;
+    height: 100%;
+    background-size: contain;
+  }
   .SectionComments .ColComments {
     margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
 .Access {

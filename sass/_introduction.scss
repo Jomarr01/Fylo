@@ -1,7 +1,20 @@
 .SectionIntroduction{
     text-align: center;
     background-color: hsl(217, 28%, 15%);
+    position: relative;
+    padding-bottom: 215px;
+    .ImgBackground{
+        position: absolute;
+        bottom: -4px;
+        z-index: 1;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
     .ImgIntroduction{
+        position: relative;
+        z-index: 2;
         img{
             max-width: 550px;
         }
@@ -10,16 +23,24 @@
         font-family: "Raleway";
         font-weight: 700;
         font-size: 250%;
-        max-width: 50%;
+        max-width: 670px;
+        width: 100%;
         margin: 0 auto;
+        position: relative;
+        z-index: 2;
     }
     .TextIntroduction{
         font-family: "Open Sans";
         font-size: 125%;
-        max-width: 40%;
+        max-width: 538px;
+        width: 100%;
         margin: 0 auto;
+        position: relative;
+        z-index: 2;
     }
     .ButtonIntroduction{
+        position: relative;
+        z-index: 2;
         button{
             padding: 15px 90px;
             font-family: "Raleway";
@@ -29,7 +50,7 @@
             border: none;
             cursor: pointer;
             &:hover{
-                background-color: hsl(198, 60%, 50%);
+            background-color: hsl(198, 60%, 50%);
             }
         }
     }
@@ -38,6 +59,20 @@
 
 @media (max-width: 768px){
     .SectionIntroduction{
+        padding-bottom: 0;
+        .ImgBackground{
+            bottom: 50%;
+            &::before{
+            content: "";
+            max-width: 1440px;
+            width: 100%;
+            min-height: 340px;
+            height: 100%;
+            background-color: hsl(218, 28%, 13%);
+            position: absolute;
+            bottom: -335px;
+            }
+        }
         .ImgIntroduction{
             margin: 0 20px;
             img{
@@ -47,12 +82,14 @@
         }
         .TitleIntroduction{
             max-width: none;
+            width: auto;
             padding: 0 20px;
             font-size: 150%;
             line-height: 33px;
         }
         .TextIntroduction{
             max-width: 100%;
+            width: auto;
             padding: 0 20px;
             font-size: 95%;
         }
