@@ -1,0 +1,41 @@
+.Access{
+    background-color: hsl(219, 30%, 18%);
+    width: 811px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px hsl(219, 30%, 18%);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: -85px;
+    .TitleAccess{
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 200%;
+    }
+    .TextAccess{
+        padding: 0 90px;
+        font-family: "Open Sans";
+    }
+    .FormAccess{
+        input{
+            padding: 15px 160px;
+            margin: 0 15px;
+            font-family: "Raleway";
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 30px;
+            border: none;
+        }
+        button{
+            padding: 15px 30px;
+            margin: 0 15px;
+            font-family: "Raleway";
+            font-weight: 700;
+            background-color: hsl(176, 68%, 64%);
+            border-radius: 30px;
+            border: none;
+        }
+    }
+}

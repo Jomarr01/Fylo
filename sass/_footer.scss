@@ -1,0 +1,62 @@
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding: 200px 90px 0px 90px;
+    .FooterLogo{
+        padding-bottom: 20px;
+    }
+    .TextFooter{
+        display: flex;
+        font-family: "Open Sans";
+        .ColLocation{
+            display: flex;
+            width: 35%;
+            padding-top: 14px;
+            .ImgLocation{
+                width: 7%;
+            }
+            .TextLocation{
+                width: 93%;
+                padding-right: 60px;
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        .ColContact{
+            width: 20%;
+            ul{
+                li{
+                    display: flex;
+                    .ImgContact{
+                        margin-right: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .FooterList{
+            width: 14%;
+            ul{
+                list-style-type: none;
+                li{
+                    margin: 10px;
+                }
+            }
+        }
+        .SocialNetworks{
+            width: 14%;
+            ul{
+                list-style-type: none;
+                display: flex;
+                li{
+                    margin: 0 auto;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    border: 2px solid white;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}

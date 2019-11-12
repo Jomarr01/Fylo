@@ -1,0 +1,18 @@
+@import "typography.scss";
+@import "header.scss";
+@import "introduction.scss";
+@import "services.scss";
+@import "description.scss";
+@import "comments.scss";
+@import "access.scss";
+@import "footer.scss";
+
+.container{
+    max-width: 1480px;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: hsl(217, 28%, 15%);
+    *{
+        color: hsl(0, 0%, 100%);
+    }
+}

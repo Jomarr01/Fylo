@@ -1,0 +1,41 @@
+.SectionDescription{
+    display: flex;
+    padding: 0 80px 150px 80px;
+    .Description{
+        padding: 0 20px;
+        height: 465px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .TitleDescription{
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 250%;
+            max-width: 60%;
+        }
+        .TextDescription{
+            font-family: "Open Sans";
+        }
+        .LinkDescription{
+            border-bottom: 1px solid hsl(176, 68%, 64%);
+            &:hover{
+                border-bottom-color: hsl(198, 60%, 50%);
+            }
+            width: max-content;
+            padding-bottom: 5px;        
+            a{
+                display: flex;
+                font-family: "Raleway";
+                text-decoration: none;
+                color: hsl(176, 68%, 64%);
+                &:hover{
+                    color: hsl(198, 60%, 50%);
+                }
+                .LinkDescriptionImg{
+                    padding-left: 5px;
+                    padding-top: 1px;
+                }
+            }
+        }
+    }
+}

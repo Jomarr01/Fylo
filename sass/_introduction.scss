@@ -1,0 +1,35 @@
+.SectionIntroduction{
+    text-align: center;
+    .ImgIntroduction{
+        img{
+            max-width: 550px;
+        }
+    }
+    .TitleIntroduction{
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 250%;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .TextIntroduction{
+        font-family: "Open Sans";
+        font-size: 125%;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    .ButtonIntroduction{
+        button{
+            padding: 15px 90px;
+            font-family: "Raleway";
+            font-weight: 700;
+            background-color: hsl(176, 68%, 64%);
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                background-color: hsl(198, 60%, 50%);
+            }
+        }
+    }
+}
