@@ -1,15 +1,14 @@
 .SectionComments{
     display: flex;
-    padding: 0 90px;
+    padding: 0 9%;
     position: relative;
     padding-bottom: 300px;
-    background-color: hsl(218, 28%, 13%);
     .ColComments{
         background-color: hsl(219, 30%, 18%);
-        margin: 0 20px;
+        margin: 0 2%;
         padding: 20px 20px;
         border-radius: 5px;
-        box-shadow: 10px 5px hsl(218, 28%, 13%);
+        box-shadow: 10px 5px hsl(217, 28%, 15%);
         .TextComments{
             font-family: "Open Sans";
             padding-bottom: 10px;
@@ -42,4 +41,14 @@
             }
         }
     }
+}
+
+@media (max-width: 768px){
+.SectionComments{
+    display: block;
+    padding: 20px 30px 350px 30px;
+        .ColComments{
+            margin-top: 20px;
+        }
+    } 
 }

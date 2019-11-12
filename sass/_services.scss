@@ -1,13 +1,23 @@
 .SectionServices{
-    padding: 100px 150px;
+    padding: 100px 10%;
     text-align: center;
+    position: relative;
+    // &::before{
+    //     content: "";
+    //     position: absolute;
+    //     display: block;
+    //     background: transparent url(/img/bg-curvy-desktop.svg) center center no-repeat;
+    //     background-size: contain;
+    //     width: 100%;
+    //     top: 0px;
+    // }
     .RowServices{
         display: flex;
         width: 100%;
     }
     .ColServices{
         width: 50%;
-        padding: 50px 70px;
+        padding: 50px 7%;
     }
     .ImgServices{
         img{
@@ -22,5 +32,19 @@
     }
     .TextServices{
         font-family: "Open Sans";
+    }
+}
+
+@media (max-width: 768px){
+    .SectionServices{
+        padding: 20px 40px;
+        .RowServices{
+            display: block;
+            .ColServices{
+                margin: 0 auto;
+                padding: 50px 0;
+                width: 100%;
+            }
+        }
     }
 }

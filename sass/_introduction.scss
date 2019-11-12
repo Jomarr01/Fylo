@@ -1,5 +1,6 @@
 .SectionIntroduction{
     text-align: center;
+    background-color: hsl(217, 28%, 15%);
     .ImgIntroduction{
         img{
             max-width: 550px;
@@ -30,6 +31,34 @@
             &:hover{
                 background-color: hsl(198, 60%, 50%);
             }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .SectionIntroduction{
+        .ImgIntroduction{
+            margin: 0 20px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .TitleIntroduction{
+            max-width: none;
+            padding: 0 20px;
+            font-size: 150%;
+            line-height: 33px;
+        }
+        .TextIntroduction{
+            max-width: 100%;
+            padding: 0 20px;
+            font-size: 95%;
+        }
+        .ButtonIntroduction{
+            padding-top: 20px;
+            padding-bottom: 30px;
         }
     }
 }
